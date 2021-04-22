@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FinalResultComponent } from './final-result/final-result.component';
 import { HomeComponent } from './home/home.component';
 import { ResultComponent } from './result/result.component';
 import { ScheduleComponent } from './schedule/schedule.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'singup', component: SignupComponent },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'startup', component: StartupComponent },
-  {path:'result',component:ResultComponent}
+  {path:'result',component:ResultComponent},
+  {path:'fresult',component:FinalResultComponent}
 ];
 
 @NgModule({

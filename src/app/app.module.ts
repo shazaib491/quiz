@@ -10,6 +10,10 @@ import { StartupComponent } from './startup/startup.component';
 import { SignupComponent } from './signup/signup.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ResultComponent } from './result/result.component';
+import { FinalResultComponent } from './final-result/final-result.component';
+
+import { ChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +23,15 @@ import { ResultComponent } from './result/result.component';
     SignupComponent,
     ScheduleComponent,
     ResultComponent,
+    FinalResultComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

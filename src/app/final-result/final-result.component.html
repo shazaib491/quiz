@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-6 m-auto">
+    <div class="card" style="">
+      <h3 class="text-dark text-center font-weight-bold">Quick Result </h3>width:18rem;
+      <div class="row">
+        <div class="col-md-3 m-auto text-dark font-weight-bold text-center">Total Marks</div>
+        <div class="col-md-3 m-auto text-dark font-weight-bold text-center">Correct Answers</div>
+        <div class="col-md-3 m-auto text-dark font-weight-bold text-center">Wrong Answers</div>
+        <div class="w-100 mt-3"></div>
+        <div class="col-md-3 m-auto text-dark font-weight-bold text-center">100</div>
+        <div class="col-md-3 m-auto text-dark font-weight-bold text-center">50</div>
+        <div class="col-md-3 m-auto text-dark font-weight-bold text-center">30</div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100"></div>
+  <div class="row">
+    <div class="col-md-5 mt-5 bg-light m-auto" >
+
+      <h4 style="text-align:center"> Bar chart of Company A&B
+        <br/><br/>
+
+        </h4><br/>
+      <div>
+        <div style="display: block">
+          <canvas baseChart
+                  [datasets]="barChartData"
+                  [labels]="mbarChartLabels"
+                  [options]="barChartOptions"
+                  [colors]="barChartColors"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
